@@ -3,8 +3,8 @@
 // @namespace   asdfsadvcwcwvqw
 // @include  https://*.ingress.com/intel*
 // @author lokpro
-// @updateURL  
-// @downloadURL  
+// @updateURL  https://github.com/Ingrass/IITC-PortalTooCloseHelp/raw/master/IITC_tooCloseHelper.user.js
+// @downloadURL  https://github.com/Ingrass/IITC-PortalTooCloseHelp/raw/master/IITC_tooCloseHelper.user.js
 // @version     1
 // @grant       none
 // ==/UserScript==
