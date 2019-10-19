@@ -1,4 +1,4 @@
-# IITC-PortalTooCloseHelp
+# IITC-PortalTooCloseHelper
 
 install url:
 https://github.com/Ingrass/IITC-PortalTooCloseHelp/raw/master/IITC_tooCloseHelper.user.js
