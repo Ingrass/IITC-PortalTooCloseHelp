@@ -5,14 +5,31 @@
 // @author lokpro
 // @updateURL  https://github.com/Ingrass/IITC-PortalTooCloseHelp/raw/master/IITC_tooCloseHelper.user.js
 // @downloadURL  https://github.com/Ingrass/IITC-PortalTooCloseHelp/raw/master/IITC_tooCloseHelper.user.js
-// @version     1
+// @version     1.2
 // @grant       none
 // ==/UserScript==
+
+setTimeout( function(){
 
 var W_PANE = 500;
 var W_SIDE = 30;
 
-document.body.innerHTML += ' \
+function appendHtml(el, str) {
+  var div = document.createElement('div');
+  div.innerHTML = str;
+  while (div.children.length > 0) {
+      if ( div.children[0].tagName == 'LINK' ) {
+          // Create an actual link element to append later
+          style = document.createElement('link');
+          style.href = div.children[0].href;
+          // append your other things like rel, type, etc
+          el.appendChild(style);
+      }
+      el.appendChild(div.children[0]);
+  }
+}
+
+appendHtml( document.body, ' \
 <div id="Panel_tooClose"> \
 	TOO CLOSE HELPER <br> \
 	<button onclick="show20mRange()">show 20m circles</button> \
@@ -25,7 +42,8 @@ document.body.innerHTML += ' \
 		#Panel_tooClose:hover > #div_notification_icons { display: none;} \
 		#Panel_tooClose button { height: 30px; } \
 		#div_notification_icons>p { padding-bottom:4px; margin-bottom:6px; line-height:0.92em; background-color:#012020; } \
-	</style>';
+	</style>'
+);
 
 
 window.show20mRange = function(){
@@ -66,3 +84,5 @@ window.addCustomPoint = function( coord, meter, options ){
 		c.setLatLng( coords );
 	});
 }
+
+}, 5000);
