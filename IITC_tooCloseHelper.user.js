@@ -9,7 +9,7 @@
 // @grant       none
 // ==/UserScript==
 
-setInterval( function(){
+setTimeout( function(){
 
 var W_PANE = 500;
 var W_SIDE = 30;
