@@ -5,9 +5,11 @@
 // @author lokpro
 // @updateURL  https://github.com/Ingrass/IITC-PortalTooCloseHelp/raw/master/IITC_tooCloseHelper.user.js
 // @downloadURL  https://github.com/Ingrass/IITC-PortalTooCloseHelp/raw/master/IITC_tooCloseHelper.user.js
-// @version     1
+// @version     1.1
 // @grant       none
 // ==/UserScript==
+
+setInterval( function(){
 
 var W_PANE = 500;
 var W_SIDE = 30;
@@ -66,3 +68,5 @@ window.addCustomPoint = function( coord, meter, options ){
 		c.setLatLng( coords );
 	});
 }
+
+}, 5000);
