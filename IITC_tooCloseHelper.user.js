@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name       TOO CLOSE HELPER
 // @namespace   asdfsadvcwcwvqw
-// @include  https://*.ingress.com/intel*
+// @match          https://intel.ingress.com/*
 // @author lokpro
 // @updateURL  https://github.com/Ingrass/IITC-PortalTooCloseHelp/raw/master/IITC_tooCloseHelper.user.js
 // @downloadURL  https://github.com/Ingrass/IITC-PortalTooCloseHelp/raw/master/IITC_tooCloseHelper.user.js
-// @version     1.2
+// @version     1.3
 // @grant       none
 // ==/UserScript==
 
